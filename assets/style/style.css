@@ -6,6 +6,7 @@
     --cinza-escuro: #dedede;
     --cinza-claro: #dedede83;
     --laranja: #ffba08;
+    --preto-logo: #1A1C2B;
 }
 
 * {
@@ -31,8 +32,8 @@ nav {
 }
 
 #logoNauffal {
-    width: 100px;
-    height: 75px;
+    width: 68px;
+    height: 50px;
 }
 
 #navegacaoLista {
@@ -60,11 +61,11 @@ nav {
 header {
     width: 100%;
     height: 300px;
-    background-image: url('/assets/image/bg-header.png');
-    background-position: bottom;
+    background-image: url('/assets/image/bg-cars2.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 
 /* Main  */
@@ -81,12 +82,139 @@ main {
 }
 
 aside {
-    grid-area: 1 / 1 / 4 / 2;
+    grid-area: 1 / 1 / 3 / 2;
     height: 500px;
     background-color: var(--cinza-escuro);
 }
 
 section {
     grid-area: 1 / 2 / 4 / 5;
-    background-color: var(--cinza-claro);
+    height: 1470px;
+}
+
+#cabecalhoSection {
+    height: 65px;
+    margin: 0 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#itensLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+#itensLeft h3, #itensLeft p{
+    font-family: Montserrat;
+}
+
+#itensLeft h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#itensLeft p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#selector {
+    width: 175px;
+    height: 47px;
+    border: 1px solid #7c7c7c18;
+    
+}
+
+.linhaSeparacao {
+    border: 1px solid #7c7c7c18;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.topLinha {
+    width: 95%;
+    margin: 20px auto;
+}
+
+#listaCarros {
+    width: 100%;
+    margin: 0px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+.cardCarro {
+    width: 324px;
+    height: 427px;
+    background: var(--bg-color);
+    border-radius: 25px;
+}
+
+.imageCarro img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0 0;
+    border-bottom: 3px solid var(--preto);
+}
+
+.cardInformacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.descricaoCurtaCarro, .valorCarro {
+    font-family: Montserrat;
+}
+
+.descricaoCurtaCarro {
+    width: 95%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: var(--preto-logo);
+}
+
+.valorCarro {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--vermelho);
+    margin-bottom: 20px;
+}
+
+
+.botoesContatos {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btnComprar, .btnWpp {
+    height: 50px;
+    cursor: pointer;
+}
+
+.btnComprar {
+    width: 163px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    color: var(--branco);
+    background-color: var(--preto-logo);
+    border: 2px solid var(--cinza-claro);
+}
+
+.btnWpp {
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-image: url('../image/icons/whatsapp-icon.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }

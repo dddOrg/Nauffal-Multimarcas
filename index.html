@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/image/logoNaufallWhite.png" sizes="32x32" />
+    <link rel="icon" href="assets/image/logoNaufallWhite.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="assets/image/logoNaufallWhite.png" />
+    <meta name="msapplication-TileImage" content="assets/image/logoNaufallWhite.png">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
@@ -48,7 +52,57 @@
 
         <!-- Carros -->
         <section>
+            <div id="cabecalhoSection">
+                <div id="itensLeft">
+                    <h3>Seu próximo carro está aqui!</h3>
+                    <p>Encontramos 9.000 carros</p>
+                </div>
 
+                <div id="itensRight">
+                    <p>Ordenar por</p>
+                    <select id="selector">
+                        <option value="all">Menor KM</option>
+                        <option value="1">Menor Preço</option>
+                        <option value="2">Maior Preço</option>
+                        <option value="3">Maior Ano/Modelo</option>
+                        <option value="4">Menor Ano/Modelo</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr class="linhaSeparacao  topLinha">
+            
+
+            <div id="listaCarros">
+                <div class="cardCarro">
+                    <div class="imageCarro">
+                        <img src="/assets/image/cars/hondaCivic.png" alt="">
+                    </div>
+
+                    <div class="cardInformacoes">
+                        <p class="descricaoCurtaCarro">
+                            Honda Civic 2.0 16v Flexone EXL 4p cvt
+                        </p>
+
+                        <p class="valorCarro">
+                            R$113.900
+                        </p>
+
+                        <hr class="linhaSeparacao">
+
+                        <div class="botoesContatos">
+                            <button class="btnComprar">
+                                Ver mais
+                            </button>
+
+                            <button class="btnWpp">
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
     
