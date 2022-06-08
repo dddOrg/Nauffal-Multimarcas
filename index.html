@@ -24,14 +24,15 @@
                 <li class="itensNavagacao">
                     <a href="#" class="linksNavegacao">Início</a>
                 </li>
+                
+                <li class="itensNavagacao">
+                    <a href="#" class="linksNavegacao">Estoque</a>
+                </li>
 
                 <li class="itensNavagacao">
                     <a href="#" class="linksNavegacao">Sobre</a>
                 </li>
 
-                <li class="itensNavagacao">
-                    <a href="#" class="linksNavegacao">Estoque</a>
-                </li>
 
                 <li class="itensNavagacao">
                     <a href="#" class="linksNavegacao">Contato</a>
@@ -47,7 +48,30 @@
     <main>
         <!-- Busca -->
         <aside>
-    
+            <p class="tituloBarraFiltro">
+                Pesquisar
+            </p>
+
+            <div id="espacoBarraPesquisa">
+                <input type="text" name="barraPesquisa" id="barraPesquisa" placeholder="Buscar um veículo">
+                <div id="btnPesquisar">
+                    <img src="assets/image/icons/lupa.png" alt="lupa de pesquisa">
+                </div>
+            </div>
+
+            <p class="tituloBarraFiltro barraPreco">
+                Preço
+            </p>
+
+            <div id="espacoRangePreco">
+                R$0
+                <input id="rangePreco" type="range" min="0" max="400000" value="" onchange="mostraValor()" />R$400.000
+                <p id="resultado"></p>
+            </div>
+
+
+
+
         </aside>
 
         <!-- Carros -->
