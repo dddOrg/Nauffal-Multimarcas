@@ -65,7 +65,7 @@
 
             <div id="espacoRangePreco">
                 R$0
-                <input id="rangePreco" type="range" min="0" max="400000" value="" onchange="mostraValor()" />R$400.000
+                <input id="rangePreco" type="range" min="0" max="400000" value="0" onchange="mostraValor()" />R$400.000
                 <p id="resultado">
                     Valor escolhido: R$0
                 </p>
@@ -111,6 +111,74 @@
 
                 </div>
             </div>
+
+            <div id="espacoNumeros">
+                <div id="anoEscolha">
+                    <p class="tituloBarraFiltro">
+                        Ano
+                    </p>
+        
+                    <input type="number" name="ano" id="inputNumbers" placeholder="Ano de">
+                    <input type="number" name="ano" id="inputNumbers" placeholder="Ano até">
+                </div>
+
+                <div id="quilometragemEscolha">
+                    <p class="tituloBarraFiltro">
+                        Quilometragem
+                    </p>
+
+                    <input type="number" name="ano" id="inputNumbers" placeholder="De km">
+                    <input type="number" name="ano" id="inputNumbers" placeholder="Até km">
+                </div>
+            </div>
+
+            <div id="combustivel">
+                <p class="tituloBarraFiltro">
+                    Combustível
+                </p>
+
+                <div class="control-group">
+                    <label class="control control-checkbox">
+                        Gasolina
+                            <input type="checkbox" />
+                        <div class="control_indicator"></div>
+                    </label>
+
+                    <label class="control control-checkbox">
+                        Álcool
+                            <input type="checkbox" />
+                        <div class="control_indicator"></div>
+                    </label>
+
+                    <label class="control control-checkbox">
+                        Diesel
+                            <input type="checkbox" />
+                        <div class="control_indicator"></div>
+                    </label>
+
+                    <label class="control control-checkbox">
+                        Elétrico
+                            <input type="checkbox" />
+                        <div class="control_indicator"></div>
+                    </label>
+
+                    <label class="control control-checkbox">
+                        Flex
+                            <input type="checkbox" />
+                        <div class="control_indicator"></div>
+                    </label>
+
+                    <label class="control control-checkbox">
+                        Gás Natural
+                            <input type="checkbox" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div> 
+            </div>
+
+            <div id="btnFiltrar">
+                Aplicar Filtros
+            </div>
         </aside>
 
         <!-- Carros -->
@@ -135,7 +203,6 @@
 
             <hr class="linhaSeparacao  topLinha">
             
-
             <div id="listaCarros">
                 <div class="cardCarro">
                     <div class="imageCarro">
@@ -156,10 +223,6 @@
                         <div class="botoesContatos">
                             <button class="btnComprar">
                                 Ver mais
-                            </button>
-
-                            <button class="btnWpp">
-                                
                             </button>
                         </div>
                     </div>
@@ -185,10 +248,6 @@
                             <button class="btnComprar">
                                 Ver mais
                             </button>
-
-                            <button class="btnWpp">
-                                
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -212,10 +271,6 @@
                         <div class="botoesContatos">
                             <button class="btnComprar">
                                 Ver mais
-                            </button>
-
-                            <button class="btnWpp">
-                                
                             </button>
                         </div>
                     </div>
@@ -241,10 +296,6 @@
                             <button class="btnComprar">
                                 Ver mais
                             </button>
-
-                            <button class="btnWpp">
-                                
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -268,10 +319,6 @@
                         <div class="botoesContatos">
                             <button class="btnComprar">
                                 Ver mais
-                            </button>
-
-                            <button class="btnWpp">
-                                
                             </button>
                         </div>
                     </div>
@@ -297,10 +344,6 @@
                             <button class="btnComprar">
                                 Ver mais
                             </button>
-
-                            <button class="btnWpp">
-                                
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -324,10 +367,6 @@
                         <div class="botoesContatos">
                             <button class="btnComprar">
                                 Ver mais
-                            </button>
-
-                            <button class="btnWpp">
-                                
                             </button>
                         </div>
                     </div>
@@ -353,10 +392,6 @@
                             <button class="btnComprar">
                                 Ver mais
                             </button>
-
-                            <button class="btnWpp">
-                                
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -380,10 +415,6 @@
                         <div class="botoesContatos">
                             <button class="btnComprar">
                                 Ver mais
-                            </button>
-
-                            <button class="btnWpp">
-                                
                             </button>
                         </div>
                     </div>
@@ -464,6 +495,9 @@
             </ul>
         </div>
     </footer>
+    <div id="copyright">
+        2022 &bull; Nauffal Multimarcas &bull; by <a href="https://www.vinicodes.tech/" id="linkVini"> Vinicius Cardoso</a>
+    </div>
 
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="/assets/script/main.js"></script>
