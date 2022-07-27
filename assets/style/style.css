@@ -252,6 +252,7 @@ input[type=range]:focus::-ms-fill-upper {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #espacoNumeros {
@@ -530,6 +531,7 @@ section {
 
 .descricaoCurtaCarro {
     width: 95%;
+    height: 40px;
     text-align: center;
     font-weight: 500;
     font-size: 15px;
